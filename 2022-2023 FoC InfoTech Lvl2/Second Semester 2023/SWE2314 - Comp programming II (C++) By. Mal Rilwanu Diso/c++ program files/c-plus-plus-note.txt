@@ -1,0 +1,142 @@
+
+
+
+
+A line of code is called a statement. 
+A statement performs a specific task.
+Each statement in C++ needs to end with a semicolon ;.
+
+C++ is a case-sensitive language. 
+This means that you need to pay attention 
+to the correct input of uppercase and lowercase letters.
+
+The #include command is used to add a header file to 
+the program. Note the # symbol, it's necessary!
+
+
+A header is a file that contains functions and commands. 
+
+The <iostream> header in C++ contains the cout command, 
+that we used for outputting text. This is why we need 
+to include it in our program, to enable us to 
+use the cout command
+
+A namespace is used to organize code into logical 
+groups and give them names.
+
+So, the std namespace is part of the <iostream> header, 
+containing the cout command
+
+
+
+Remember the following important points:
+
+The #include statement is used to add a header file to the program.
+The using command is used to tell the program which namespace to use.
+To use the cout command, you need to include the <iostream> header and use the std namespace.
+The starting point of C++ programs is the function called main, which includes the code that you want to run.
+The endl command is used to add a new line to the output.
+
+
+
+Awesome! Here are some key takeaways:
+
+A variable has a name and a type of the value it holds. 
+To declare a variable use the type followed by the name of the variable.
+You can assign a value to the declared variable using the = operator.
+A variable can change its value during the program, by being assigned to a new value.
+
+
+float vs double
+By default, decimal values are of type double.
+
+float uses less storage in the memory, but is not as precise as the double type.
+
+This means that calculations that use floats are faster than the ones that use double, however, the results are less accurate in terms of the decimal digits.
+
+
+
+Lesson Takeaways
+Great job! Here are some key takeaways about data types:
+
+int is used to hold whole numbers (integers)
+double stores decimals.
+float is similar to double, but has less precision and requires less memory. You need to prefix the value with the letter 'f' to create floats.
+char holds a single character.
+bool can have one of the following values: true or false. 
+
+
+
+Lesson Takeaways
+Doing math is easy and fun! Here are some key takeaways:
+
+You can use basic math operators to perform calculations with values and variables.
+
++ is addition
+- is subtraction
+/ is division
+Dividing integers results in an integer.
+% finds the remainder of a division.
+We'll learn more about variables in the next lesson!
+
+
+
+Here are some key points about variables:
+
+You can declare multiple variables of the same type by separating them with commas.
+You can use the auto keyword to automatically set the type of the variable based on the value it's assigned to.
+Remember, that C++ is case sensitive.
+When naming your variables, remember that they need to start with a letter or underscore and cannot contain special symbols.
+
+
+Comments are annotations in the code that explain what the code is doing.
+
+Code is for computers, while comments are for humans who read and work with the code.
+
+
+Comments are explanatory statements that explain what the code is doing.
+
+They can contain notes, todos as well as code that is work-in-progress.
+
+// starts a single line comment.
+/* */ is used for multi-line comments.
+
+
+
+
+That's how you take input from the user in C++!
+
+First, declare a variable that will store the input. Then, use it in the cin >> command.
+
+The cin >> command is similar to cout <<. It prompts the user for input and stores the entered value in the given variable.
+
+It is important to use the correct type for the variable that will store the input.
+
+In the next lesson, we will learn how to make decisions and check for conditions.
+
+
+
+
+Decision Making
+Conditional statements are used to perform different actions based on different conditions. 
+
+For example, a banking application can set different rates based on the client types, a ticketing application can apply discounts based on the age of the buyers, etc. 
+
+
+
+if Statement
+The following comparison operators may be used to form the condition:
+
+< less than
+
+> greater than
+
+!= not equal to
+
+== equal to
+
+<= less than or equal to
+
+>= greater than or equal to
+
+

@@ -1,0 +1,51 @@
+To represent the information about products and suppliers in a database, we can design the following schema:
+
+Product Table:
+
+ProductID (Primary Key)
+Description
+Price
+SupplierID (Foreign Key referencing Supplier table)
+Supplier Table:
+
+SupplierID (Primary Key)
+Name
+Phone
+AddressID (Foreign Key referencing Address table)
+Address Table:
+
+AddressID (Primary Key)
+StreetAddress
+City
+Postcode
+This schema allows us to store information about products, their suppliers, and supplier addresses in a structured manner.
+
+Here's the SQL representation of the schema:
+
+sql
+Copy code
+CREATE TABLE Product (
+    ProductID INT PRIMARY KEY,
+    Description VARCHAR(255),
+    Price DECIMAL(10, 2),
+    SupplierID INT,
+    FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
+);
+
+CREATE TABLE Supplier (
+    SupplierID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Phone VARCHAR(15),
+    AddressID INT,
+    FOREIGN KEY (AddressID) REFERENCES Address(AddressID)
+);
+
+CREATE TABLE Address (
+    AddressID INT PRIMARY KEY,
+    StreetAddress VARCHAR(255),
+    City VARCHAR(100),
+    Postcode VARCHAR(10)
+);
+With this schema, you can store information about products, their prices, and their corresponding suppliers. Each supplier has an address consisting of street address, city, and postcode. The relationship between products and suppliers is established through the SupplierID foreign key in the Product table, and the relationship between suppliers and addresses is established through the AddressID foreign key in the Supplier table.
+
+This schema provides a normalized structure for representing product and supplier information, allowing for efficient querying and maintenance of the database.

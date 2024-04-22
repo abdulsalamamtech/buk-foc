@@ -1,0 +1,21 @@
+1. why is HCI important, and why does the user interface matter?
+
+2. why is a good user interface design important?
+
+3. what do you understand by user-centered design(UCD), and how could you be user-centered?
+
+4. Define HCI prototyping.
+
+5. briefly explain low-fidelity and high-fidelity prototyping.
+
+6. define the use of personas as another way of describing users.
+
+7. write short notes on:
+a. affordance
+b. visibility
+c. feedback
+d. simplicity
+e. consistency
+f. structure
+g. tolerance
+

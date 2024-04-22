@@ -1,0 +1,111 @@
+CSC2204 - Analysis of Algorithms.
+
+ASSIGNMENT.
+Sequential secarch can also be used for a sorted list.
+a. write al algorithm that will return the same results as 
+the one for unsorted list that can run more quickly.
+b. do the worst case analysis.
+c. do the average case analysis with target found and target not found.
+
+
+
+ANSWER #1
+
+
+Optimized Sequential Search Algorithm for Sorted Lists:
+1. Pseudocode:
+
+Code snippet
+function optimized_sequential_search(list, target):
+  for i in range(len(list)):
+    if list[i] == target:
+      return i
+    elif list[i] > target:
+      return -1  # Not found, all remaining elements will be greater
+  return -1  # Not found
+Use code with caution. Learn more
+2. Worst-Case Analysis:
+
+Sorted List: In the worst case, the target element is not present in the list, and the algorithm 
+iterates through the entire list without finding it. Therefore, the worst-case time complexity is 
+O(N), where N is the number of elements in the list. This is the same as the worst-case complexity 
+of sequential search for unsorted lists.
+Unsorted List: The worst-case analysis remains the same as for unsorted lists, which is also O(N).
+3. Average-Case Analysis:
+
+Target Found:
+
+Sorted List: The average number of comparisons depends on the position of the target element in the list.
+ If the target is in the middle, it will be found after half the elements are compared, resulting in an
+ average-case complexity of O(N/2). However, if the target is at the beginning or end of the list, 
+it will be found very quickly, leading to an average-case closer to O(1).
+Unsorted List: The average number of comparisons remains the same as for unsorted lists, which is O(N/2).
+Target Not Found:
+
+Sorted List: Similar to the "Target Found" case, the average number of comparisons depends on the target's 
+position. In the best case, the target is smaller than the first element, resulting in only one comparison. 
+In the worst case, the target is larger than all elements, requiring iterating through the entire 
+list (same as the worst-case). On average, however, the target will be less than some elements 
+but greater than others, leading to an average-case complexity between O(1) and O(N/2), 
+depending on its specific position.
+Unsorted List: The average number of comparisons remains the same as for unsorted lists, which is O(N/2).
+Comparison to Unsorted Sequential Search:
+
+For sorted lists, the optimized sequential search has better average-case performance 
+but the same worst-case performance as the standard sequential search.
+For unsorted lists, both algorithms have the same time complexity in all cases.
+Additional Notes:
+
+The modified binary search mentioned in the previous responses isn't suitable for unsorted lists because 
+it relies on comparisons between adjacent elements to determine the search direction. In an unsorted list, 
+these comparisons don't provide valid information.
+If you can guarantee the list is always sorted, you can improve performance further by using binary search, 
+which has a O(log N) average-case and worst-case complexity for sorted lists.
+
+
+
+
+
+
+
+ANSWER #2
+
+
+1. Pseudocode Algorithm for Sequential Search on a Sorted List:
+
+vbnet
+Copy code
+Algorithm: Sequential Search on a Sorted List
+
+Input: A sorted list arr[], element to search target
+Output: Index of target in arr[], or -1 if not found
+
+1. Set index to 0.
+2. While index is less than the length of arr[] and arr[index] is less than or equal to target:
+    a. If arr[index] is equal to target, return index.
+    b. Increment index by 1.
+3. If the loop terminates without finding target, return -1.
+2. Worst-Case Analysis:
+In the worst-case scenario, the target element is either not present in the list or located at the end 
+of the list. In such cases, the algorithm will have to iterate through all elements in the list 
+sequentially. The time complexity of sequential search in a sorted list is O(n), 
+where n is the number of elements in the list.
+
+3. Average Case Analysis:
+
+With Target Found:
+In the average case scenario where the target element is found in the list, 
+the algorithm may find the target early or after scanning a few elements. On average, 
+the algorithm will scan half of the elements before finding the target. 
+Thus, the average time complexity is O(n/2), which simplifies to O(n).
+
+With Target Not Found:
+In the average case scenario where the target element is not found in the list, 
+the algorithm will have to scan through all elements in the list sequentially. 
+On average, it will need to scan half of the elements before determining that 
+the target is not present. Thus, the average time complexity remains O(n).
+
+Sequential search on a sorted list, although more efficient than on an unsorted 
+list in certain cases, still suffers from linear time complexity, making it less 
+optimal compared to other search algorithms such as binary search or 
+interpolation search for sorted lists.

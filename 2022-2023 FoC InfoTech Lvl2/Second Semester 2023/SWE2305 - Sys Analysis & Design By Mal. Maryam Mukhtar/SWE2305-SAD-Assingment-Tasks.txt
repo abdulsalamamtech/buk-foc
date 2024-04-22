@@ -1,0 +1,35 @@
+Group Assignments 
+
+Task 1: Project Initiation
+The business need that led to the identification of the project.
+The System Request –Tabular Format
+The Feasibility Report – Tabular Format
+
+Task 2: Planning
+The SDLC selected and why
+The Work Plan (Draft with only 3 task(planning, analysis and Design)
+
+Task 3: Analysis
+The Selected Elicitation technique and why. The elicitation report including the questions used and the answers.
+The Four(4) different types of requirements
+Refine the Work Plan (break analysis into the two(2) sub-steps above and assign all the tasks to half of the analysis members)
+
+
+Task 4:
+For 1/3 of the Design Team
+- Create DFD or Activity Diagram for the three(3) use case description of task 3
+
+-Create an ERD for the system.
+
+
+Task 6: Design
+Choose a system acquisition strategy for your system and state reason for selecting.
+Choose an architectural design for your system and state reason for selecting(hint: your non-functional requirements will influence your choice of the architecture). 
+State the Hardware and Software Specification for your system.
+Create a User Design Structure for your System.
+Create a User Interface Template for your System.
+
+
+Task 7: Conclusion
+Modify your work plan to include Design subtasks
+Merge all Task 1-6 into a single document PDF format and submit on or before 27th February, 2024.
